@@ -3,7 +3,9 @@ name: CI robot-browserstack sample
 on:
   pull_request:
     branches:
-      - sdk
+      - temp_sdk
+    types:
+      - opened
 jobs:
   build:
     runs-on: ${{ matrix.os }}
