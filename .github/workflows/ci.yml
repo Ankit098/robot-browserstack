@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - sdk2
+    types:
+      - opened
+      - reopened
 jobs:
   build:
     runs-on: ${{ matrix.os }}
